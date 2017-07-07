@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+	<meta charset="UTF-8">
+	<title>Vent' anni</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="node_modules/jquery/dist/jquery.min.js"></script>
+	<!-- 
+		RawGit serves raw files directly from GitHub with proper Content-Type headers. 
+		- https://rawgit.com/ 
+		
+		Emojione Awesome
+		-https://demos.emojione.com/latest/emojione-awesome.html 
+	-->
+	<link rel="stylesheet" href="https://rawgit.com/emojione/emojione/master/extras/css/emojione-awesome.css">
+	
+	<!-- Ionicons 
+		<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+		- e.g. <span class="ion-icon ion-tshirt-outline" aria-hidden="true"></span> 
+	-->
+
+	<link href="css/turin-events.css" rel="stylesheet">
+</head>
+<body>
+	<div class="container-fluid">	
+		<div class="row te-date te-title">
+			<div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1">
+				<h1 class="text-center t">
+					<span class="e1a-tada e1a-med"></span>
+		  			20 Anni - Andrea
+					<span class="e1a-tada e1a-med"></span>
+		  		</h1>
+<!-- 			<h1 class="text-center">
+		  	</h1> -->
+			</div>
+<!-- 
+			<div class="col-xs-12 col-sm-5 text-right">
+				<h1>Sabato</h1>
+			</div>
+			<div class="col-xs-12 col-sm-2">
+				<div class="te-circle-container">
+					<h1 class="te-circle">8</h1>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-5">
+				<h1>Luglio</h1>
+			</div>
+-->
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-6 te-img-pool">
+				<img src="https://i.ytimg.com/vi/IDgH0com-_s/maxresdefault.jpg" alt="">
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-6 te-info-container">
+				<h1>
+					Informazioni
+				</h1>
+				<p class="te-info te-top-border">
+					<span class="e1a-calendar_spiral e1a-med"></span>
+					<strong>Sabato 8 Luglio</strong>
+				</p>
+				<p class="te-info">
+					<!-- <span class="glyphicon glyphicon-time" aria-hidden="true"></span> -->
+					<span class="e1a-clock3 e1a-med"></span>
+					<strong>Ore - 15:00</strong>
+				</p>
+				<p class="te-info">
+					<span class="e1a-person_swimming e1a-med"></span>
+					<strong>Piscina</strong><br/>
+					Si consiglia di indossare già il costume sotto gli abiti
+				</p>
+				<p class="te-info">
+					<span class="e1a-red_car e1a-med"></span>
+					<strong>Macchina</strong><br/>
+					Per chi viene in <strong>macchina</strong>, se non c'è posto dentro, si prega di parcheggiare <strong>fuori</strong> dal cancello bianco a lato della strada <u>è sicuro</u>
+				</p>
+				<p class="te-info">
+					<span class="e1a-bus e1a-med"></span>
+					<strong>Pullman</strong><br/>
+					Per chi viene con i <strong>mezzi</strong>, il pullman <strong>39</strong> fa capolinea al castello di Moncalieri. Da lì posso passare a prendervi in macchina
+				</p>
+
+			</div>
+		</div>
+		<div class="row maps">
+			<h1>
+				<span class="e1a-map e1a-med"></span>
+					Strada Milius 3, Moncalieri
+			</h1>
+			<!-- <iframe id="te-location"
+		  		frameborder="0"
+		 		src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCu1ITNlv6WTvr6ljh3ZjnKapYPNxr5mts
+		    	&q=Space+Needle,Seattle+WA" allowfullscreen>
+			</iframe> -->
+			<iframe id="te-location"
+			  src="https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d3416.1293546968814!2d7.688910115888314!3d45.00336972909821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m9!3e0!4m3!3m2!1d45.0017505!2d7.6861975!4m3!3m2!1d45.0051975!2d7.6960001!5e1!3m2!1sit!2sit!4v1499430052901" allowfullscreen>
+			</iframe>
+		</div>
+			<div class="row text-center text-danger">
+				<p class="te-info">
+					<span class="e1a-warning e1a-med"></span>
+					Il percorso che suggerisce <u>automaticamente</u> Google Maps potrebbe essere sbagliato!
+				</p>
+			</div>
+			<div class="row te-dark">
+				<h1>
+					<!-- <span class="e1a-ballot_box_with_check e1a-med"></span> -->
+					Percorso corretto</h1>
+				<ul>
+					<li><p class="te-info">Dal castello di Moncalieri, proseguire dritto verso la collina</p></li>
+					<li><p class="te-info">Al 1° dare la precedenza: proseguire dritto</p></li>
+					<li><p class="te-info">Al 2° dare orecedebza: tenersi sulla destra e proseguire tuto dritto fino ad un cancello bianco</p></li>
+					<li><p class="te-info">Suonare a <strong>Piovano</strong></p></li>
+				</ul>
+			</div>
+	</div>
+	<script>		
+		$(document).ready(function() {
+			$('.maps').click(function () {
+				$('.maps iframe').css("pointer-events", "auto");
+			});
+
+			$( ".maps" ).mouseleave(function() {
+				$('.maps iframe').css("pointer-events", "none"); 
+			});
+	 	});                  
+	</script>
+</body>
+</html>

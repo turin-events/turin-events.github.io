@@ -1,0 +1,132 @@
+/* te-... stands for turin-events */
+#te-location{
+	width: 100%;
+	min-height: 60vh;
+	display: block;
+	margin: 0 auto;
+	border: 0;
+}
+.maps{
+	margin-top: 2.5vh;
+/*	margin-bottom: 2.5vh;*/
+	background: #23b65e;
+	margin-top: 0;
+}
+.maps iframe{
+    pointer-events: none;
+}
+.te-date{
+	/*color: #2db168;*/
+	color: #4ea6d8;
+}
+.te-date > div > h1{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border: 5px solid #a6e639;
+/* 	border-top: 5px solid #a6e639;
+border-bottom: 5px solid #a6e639; */
+}
+.te-date > .col-xs-12 {
+	text-align: center
+}
+.te-circle-container {
+	margin: 0 auto;
+	border: 2px solid;
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	position: relative;
+}
+.te-circle {
+	font-size: 5em;
+	margin: 0;
+	position: absolute;            
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+p.te-info{
+	font-size: 1.2em;
+	padding-top: .5em;
+	padding-bottom: .5em;
+	margin: 0;
+/*	border-top: 2px dashed;*/
+}
+p.te-info > span{
+	font-size: 1em; 
+}
+.e1a-med{
+	vertical-align: middle;
+}
+/* .te-top-border{
+	border-top: 2px dashed;
+} */
+.te-title {
+	background: #4ea6d8;
+	padding-top: 2.5vh;
+	padding-bottom: 2.5vh;
+}
+.te-title > div > h1{
+	font-size: 5em;
+}
+h1 > span{
+	font-size: .5em;	
+}
+.te-title, .te-info-container, .maps, .te-dark, .text-danger{
+	color: #f3f3f3;
+}
+.te-info-container > h1,
+.te-info-container > p,
+.te-dark > h1,
+.te-dark > p {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.te-info-container{
+	background: #4ea6d8;
+	padding-bottom: 50px;
+}
+.te-info-container > h1,
+.te-dark > h1{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin: 0;
+}
+.te-info-container > h1{
+	background: #4693bf;
+}
+.te-dark > h1{
+	background: #1f1f1f;
+}
+.text-danger{
+	background: #DC143C;
+}
+.te-info-container, .te-dark{
+	padding: 0;
+}
+.te-dark{
+	background: #333;
+}
+.te-img-pool{
+	padding: 0;
+	margin: 0;
+	vertical-align: middle;
+	height: 100%;
+}
+.te-img-pool > img{
+	width: 100%;
+	height: 100%;
+}
+@media screen and (max-width: 768px) {
+	.te-title > div > h1{
+		font-size: 2.5em;
+	}
+}
+@media screen and (max-width: 480px) {
+	.maps > h1{
+		font-size: 1.6em;
+	}
+	.e1a-warning{
+		width: 100%;
+	}
+}

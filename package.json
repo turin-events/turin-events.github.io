@@ -1,0 +1,16 @@
+{
+  "name": "turin-events",
+  "version": "0.1.0",
+  "description": "Events that happen in turin",
+  "main": "index.html",
+  "repository": "https://github.com/turin-events/turin-events.github.io",
+  "author": "VictorBP",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1"
+  },
+  "files": [
+    "css/*.{css}"
+  ]
+}
