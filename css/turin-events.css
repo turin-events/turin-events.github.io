@@ -123,6 +123,9 @@ h1 > span{
 	}
 }
 @media screen and (max-width: 480px) {
+	.te-title > div > h1 > span{
+		width: 100%;
+	}
 	.maps > h1{
 		font-size: 1.6em;
 	}
