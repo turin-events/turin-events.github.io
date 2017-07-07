@@ -120,6 +120,9 @@ h1 > span{
 	height: 100%;
 	filter: blur(5px);	
 }
+.te-horizontal-mirror{
+	transform: scaleX(-1);
+}
 @media screen and (max-width: 768px) {
 	 h1.te-title{
 		font-size: 2.5em;
