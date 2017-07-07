@@ -117,7 +117,7 @@ h1 > span{
 	vertical-align: middle;
 	height: 60vh;
 	/*background: url('https://i.ytimg.com/vi/IDgH0com-_s/maxresdefault.jpg') no-repeat center center fixed; */
-	background: url('https://i.ytimg.com/vi/IDgH0com-_s/maxresdefault.jpg') no-repeat center center; 
+	background: url('https://raw.githubusercontent.com/turin-events/turin-events.github.io/master/img/pool-picture.jpg') no-repeat center center; 
 }
 @media screen and (max-width: 768px) {
 	.te-title > div > h1{
