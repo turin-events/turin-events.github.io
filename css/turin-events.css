@@ -1,152 +1,172 @@
-/* te-... stands for turin-events */
-#te-location{
-	width: 100%;
-	min-height: 60vh;
-	display: block;
-	margin: 0 auto;
-	border: 0;
-}
-.maps{
-	margin-top: 2.5vh;
-/*	margin-bottom: 2.5vh;*/
-	background: #23b65e;
-	margin-top: 0;
-}
-.maps iframe{
-    pointer-events: none;
-}
-h1.te-title{
-	margin-top: 10px;
-	margin-bottom: 10px;
-	font-weight: 700;
-/*	font-family: "Bubble Man";
-	color: #f3f3f3;*/
-	/*border: 5px solid #a6e639;*/
-/*  	border-top: 5px solid #a6e639;
-	border-bottom: 5px solid #a6e639;  */
-}
-.te-circle-container {
-	margin: 0 auto;
-	border: 2px solid;
-	border-radius: 50%;
-	width: 100px;
-	height: 100px;
-	position: relative;
-}
-.te-circle {
-	font-size: 5em;
-	margin: 0;
-	position: absolute;            
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-p.te-info{
-	font-size: 1.2em;
-	padding-top: .5em;
-/*	padding-bottom: .5em;*/
-	margin: 0;
-/*	border-top: 2px dashed;*/
-}
-p.te-info > span{
-	font-size: 1em;
-	margin: 0;
-}
-.e1a-med{
-	vertical-align: middle;
-}
-/* .te-top-border{
-	border-top: 2px dashed;
-} */
-.te-title {
-	padding-top: 2.5vh;
-	padding-bottom: 2.5vh;
-}
-h1.te-title{
-	font-size: 5em;
-}
-h1 > span{
-	font-size: .5em;	
-}
-.te-title, .te-info-container, .maps, .te-dark, .text-danger{
-	color: #f3f3f3;
+/*
+	te-... Stands for turin-events
+*/
+
+#te-location {
+    width: 100%;
+    min-height: 60vh;
+    display: block;
+    margin: 0 auto;
+    border: 0;
 }
 
-.te-info-container > h1,
-.te-info-container > p,
-.te-dark > h1,
-.te-dark > p {
-	padding-left: 15px;
-	padding-right: 15px;
+.maps {
+    background: #23b65e;
+    margin-top: 0;
 }
-.te-lightblue{
-	background: #4ea6d8;
-	position: relative;
+
+h1.te-title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 700;
 }
-.te-info-container, .te-dark{
-	padding: 0;
+
+.te-circle-container {
+    margin: 0 auto;
+    border: 2px solid;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: relative;
 }
-.te-info-container{
-	background: rgba(78, 166, 216, 0.2);
-	padding-bottom: 50px;
+
+.te-circle {
+    font-size: 5em;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
-.te-info-container > h1,
-.te-dark > h1{
+
+p.te-info {
+    font-size: 1.2em;
+    padding-top: .5em;
+    margin: 0;
+}
+
+p.te-info span {
+    font-size: 1em;
+    margin: 0;
+}
+
+.e1a-med {
+    vertical-align: middle;
+}
+
+.te-title {
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
+}
+
+h1.te-title {
+    font-size: 5em;
+}
+
+h1 span {
+    font-size: .5em;
+}
+
+.te-title,
+.te-info-container,
+.maps,
+.te-dark,
+.text-danger {
+    color: #f3f3f3;
+}
+
+.te-info-container h1,
+.te-info-container p,
+.te-dark h1,
+.te-dark p {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.te-lightblue {
+    background: #4ea6d8;
+    position: relative;
+}
+
+.te-info-container,
+.te-dark {
+    padding: 0;
+}
+
+.te-info-container {
+    background: rgba(78, 166, 216, 0.2);
+    padding-bottom: 50px;
+}
+
+.te-info-container h1,
+.te-dark h1 {
     padding-top: 20px;
     padding-bottom: 10px;
     margin: 0;
 }
-.te-info-container > h1{
-	background: #4693bf;
+
+.te-info-container h1 {
+    background: #4693bf;
 }
-.te-dark > h1{
-	background: #1f1f1f;
+
+.te-dark h1 {
+    background: #1f1f1f;
 }
-.text-danger{
-	background: #DC143C;
+
+.text-danger {
+    background: #DC143C;
 }
-.te-dark{
-	background: #333;
+
+.te-dark {
+    background: #333;
 }
-.te-img-pool{
-	padding: 0;
-	margin: 0;
-	vertical-align: middle;
-	height: 60vh;
-	/*background: url('https://i.ytimg.com/vi/IDgH0com-_s/maxresdefault.jpg') no-repeat center center fixed; */
-	background: url('https://raw.githubusercontent.com/turin-events/turin-events.github.io/c1cb4c9a0e01ecde871d7209c5d94bbb8935ab5d/img/pool-picture.jpg') no-repeat center center;
-	background-size: cover;
+
+.te-img-pool {
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+    background: url('https://raw.githubusercontent.com/turin-events/turin-events.github.io/c1cb4c9a0e01ecde871d7209c5d94bbb8935ab5d/img/pool-picture.jpg') no-repeat center center;
+    background-size: cover;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-	height: 100%;
-	filter: blur(5px);	
+    height: 100%;
+    filter: blur(5px);
 }
-.te-horizontal-mirror{
-	transform: scaleX(-1);
+
+.te-horizontal-mirror {
+    transform: scaleX(-1);
 }
+
 @media screen and (max-width: 768px) {
-	 h1.te-title{
-		font-size: 2.5em;
-	}
-	div.te-info-container, div.text-danger, div.te-dark{
-		padding-bottom: 5vh;
-	}
+    h1.te-title {
+        font-size: 2.5em;
+    }
+
+    div.te-info-container,
+    div.text-danger,
+    div.te-dark {
+        padding-bottom: 5vh;
+    }
 }
+
 @media screen and (max-width: 568px) {
-	.maps > h1{
-		font-size: 1.6em;
-	}
-	.e1a-warning{
-		width: 100%;
-	}
+    .maps h1 {
+        font-size: 1.6em;
+    }
+
+    .e1a-warning {
+        width: 100%;
+    }
 }
+
 @media screen and (max-width: 480px) {
-	h1.te-title > span{
-		width: 100%;
-	}
-	.maps > h1{
-		font-size: 1.6em;
-	}
+    h1.te-title span {
+        width: 100%;
+    }
+
+    .maps h1 {
+        font-size: 1.6em;
+    }
 }
