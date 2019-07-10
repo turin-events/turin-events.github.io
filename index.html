@@ -125,16 +125,30 @@
 				</ul>
 			</div>
 	</div>
-	<script>		
-		$(document).ready(function() {
-			$('.maps').click(function () {
-				$('.maps iframe').css("pointer-events", "auto");
+	<script>
+		function allowMouseInteractionOnMap() {
+			const gMap = document.querySelector('.maps');
+
+			if (typeof gMap === 'undefined') {
+				return;
+			}
+
+			let mapIframe = gMap.querySelector('iframe');
+
+			if (typeof mapIframe === 'undefined') {
+				return;
+			}
+
+			gMap.addEventListener('click', () => {
+				mapIframe.style.pointerEvents = 'auto';
 			});
 
-			$( ".maps" ).mouseleave(function() {
-				$('.maps iframe').css("pointer-events", "none"); 
+			gMap.addEventListener('mouseleave', () => {
+				mapIframe.style.pointerEvents = 'none';
 			});
-	 	});                  
+		}
+
+		allowMouseInteractionOnMap();
 	</script>
 </body>
 </html>
