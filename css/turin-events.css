@@ -12,9 +12,7 @@
 	background: #23b65e;
 	margin-top: 0;
 }
-.maps iframe{
-    pointer-events: none;
-}
+
 h1.te-title{
 	margin-top: 10px;
 	margin-bottom: 10px;
